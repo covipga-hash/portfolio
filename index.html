@@ -155,18 +155,18 @@
   .projects{display:grid; grid-template-columns:1fr 1fr; gap:18px}
   .project{
     background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
-    padding:24px 26px;
+    overflow:hidden;
     transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
   }
+  .project-media img{display:block; width:100%; aspect-ratio:16/9; object-fit:cover; border-bottom:1px solid var(--line)}
+  .project-body{padding:20px 24px 24px}
   .project:hover{transform:translateY(-4px); border-color:var(--accent); box-shadow:var(--shadow)}
   .project .kind{
     font-size:.78rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase;
     color:var(--accent); margin-bottom:8px;
   }
   .project h3{margin:0 0 8px; font-size:1.14rem}
-  .project p{margin:0 0 16px; color:var(--muted); font-size:.95rem}
-  .project .links{display:flex; gap:14px; flex-wrap:wrap}
-  .project .links a{font-weight:700; font-size:.92rem}
+  .project p{margin:0; color:var(--muted); font-size:.95rem}
   /* ---------- Education ---------- */
   .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
   .edu h3{margin:0 0 4px; font-size:1.08rem}
@@ -358,32 +358,32 @@
   <section id="du-an" class="wrap reveal">
     <div class="sec-head">
       <h2>Dự án tiêu biểu</h2>
-      <p>Việc thật, sản phẩm thật — bấm vào để xem.</p>
+      <p>Việc thật, sản phẩm thật.</p>
     </div>
     <div class="projects">
       <article class="project">
-        <div class="kind">Website · Đã vận hành</div>
-        <h3>Website Công ty Xây dựng Minh Phúc</h3>
-        <p>Thiết kế và xây dựng website cho công ty thiết kế &amp; xây dựng: giới thiệu dịch vụ, công cụ dự toán chi phí và form thu thập thông tin khách hàng.</p>
-        <div class="links"><a href="https://covipga-hash.github.io/minhphuc-pro/" target="_blank" rel="noopener">Xem website ↗</a></div>
+        <div class="project-media"><img src="assets/minhphuc-website.jpg" alt="Giao diện website Công ty Xây dựng Minh Phúc" loading="lazy"></div>
+        <div class="project-body">
+          <div class="kind">Website · Đã vận hành</div>
+          <h3>Website Công ty Xây dựng Minh Phúc</h3>
+          <p>Thiết kế và xây dựng website cho công ty thiết kế &amp; xây dựng: giới thiệu dịch vụ, công cụ dự toán chi phí và form thu thập thông tin khách hàng.</p>
+        </div>
       </article>
       <article class="project">
-        <div class="kind">Website · Đã vận hành</div>
-        <h3>Website Anh Ba Tự Nhiên — Máy tính Casio</h3>
-        <p>Website bán máy tính Casio cũ: chọn nhanh theo cấp học, so sánh fx-580VN X với fx-880BTG, phòng test, tra cứu đơn hàng và bảo hành.</p>
-        <div class="links"><a href="https://covipga-hash.github.io/anh-ba-tu-nhien/" target="_blank" rel="noopener">Xem website ↗</a></div>
+        <div class="project-media"><img src="assets/anhba-website.jpg" alt="Giao diện website Anh Ba Tự Nhiên bán máy tính Casio" loading="lazy"></div>
+        <div class="project-body">
+          <div class="kind">Website · Đã vận hành</div>
+          <h3>Website Anh Ba Tự Nhiên — Máy tính Casio</h3>
+          <p>Website bán máy tính Casio cũ: chọn nhanh theo cấp học, so sánh fx-580VN X với fx-880BTG, phòng test, tra cứu đơn hàng và bảo hành.</p>
+        </div>
       </article>
       <article class="project">
-        <div class="kind">Video ngắn · Bất động sản</div>
-        <h3>Video giới thiệu dự án Vinhomes Saigon Park</h3>
-        <p>Video ngắn giới thiệu dự án khu đô thị Đại học Quốc tế — Vinhomes Saigon Park, phục vụ hoạt động tư vấn và bán hàng.</p>
-        <div class="links"><a href="https://drive.google.com/file/d/1YBB4axZuvK5Mqqpc0lN0C6njSiWVNHMk/view?usp=drivesdk" target="_blank" rel="noopener">Xem video ↗</a></div>
-      </article>
-      <article class="project">
-        <div class="kind">Video ngắn · Kênh “Nếu Như”</div>
-        <h3>“Nếu Thái Lan đào kênh Kra, Việt Nam được / mất gì?”</h3>
-        <p>Video phân tích dạng What If: kênh đào Kra rút ngắn hải trình, tác động tới thương mại qua eo biển Malacca và vị thế của Việt Nam.</p>
-        <div class="links"><a href="https://drive.google.com/file/d/1U1jMutYkg1Iik2VVob2CIhP6PBZZ_Fe0/view?usp=drivesdk" target="_blank" rel="noopener">Xem video ↗</a></div>
+        <div class="project-media"><img src="assets/bds-anim.gif" alt="Ảnh động từ video giới thiệu dự án Vinhomes Saigon Park" loading="lazy"></div>
+        <div class="project-body">
+          <div class="kind">Video ngắn · Bất động sản</div>
+          <h3>Video giới thiệu dự án Vinhomes Saigon Park</h3>
+          <p>Video ngắn giới thiệu dự án khu đô thị Đại học Quốc tế — Vinhomes Saigon Park, phục vụ hoạt động tư vấn và bán hàng.</p>
+        </div>
       </article>
     </div>
   </section>
